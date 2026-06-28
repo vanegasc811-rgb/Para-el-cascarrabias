@@ -1,1 +1,167 @@
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family: Georgia, serif;
+
+}
+
+body{
+
+    background:linear-gradient(
+        to bottom,
+        #04142b,
+        #0b2e52,
+        #145d63
+    );
+
+    color:white;
+
+}
+
+
+/* ===========================
+   PANTALLAS
+=========================== */
+
+.pantalla{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.oculto{
+
+    display:none;
+
+}
+
+
+/* ===========================
+   CONTENIDO
+=========================== */
+
+.contenido{
+
+    max-width:700px;
+
+    padding:40px;
+
+    z-index:5;
+
+}
+
+
+/* ===========================
+   TÍTULO
+=========================== */
+
+h1{
+
+    font-size:3rem;
+
+    margin-bottom:30px;
+
+    text-shadow:0 0 20px rgba(255,255,255,.3);
+
+}
+
+
+/* ===========================
+   FRASE
+=========================== */
+
+.frase{
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+    opacity:.9;
+
+}
+
+
+/* ===========================
+   SOBRE
+=========================== */
+
+#sobre{
+
+    font-size:90px;
+
+    margin-bottom:35px;
+
+    transition:.4s;
+
+}
+
+#sobre:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+#abrir{
+
+    background:#3b82f6;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 0 25px rgba(59,130,246,.45);
+
+}
+
+#abrir:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 40px rgba(59,130,246,.8);
+
+}
