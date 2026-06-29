@@ -107,4 +107,13 @@ playAudio.addEventListener("click",()=>{
 
     voice.play();
 
+});const openGift = document.getElementById("openGift");
+const surprise = document.getElementById("surprise");
+
+openGift.addEventListener("click", () => {
+
+    surprise.scrollIntoView({
+        behavior: "smooth"
+    });
+
 });

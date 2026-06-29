@@ -974,4 +974,26 @@ transform:translateY(0);
 
     font-size:1.1rem;
 
+}#countdown{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+}
+
+#countText{
+
+    font-size:2rem;
+
+    margin-top:30px;
+
+    font-weight:bold;
+
+}
+
+#surprise{
+
+    padding-top:120px;
+
 }
