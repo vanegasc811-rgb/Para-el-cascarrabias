@@ -184,4 +184,95 @@ button:hover{
 
     transform:scale(1.05);
 
+}/* ==========================================
+   CIELO NOCTURNO
+========================================== */
+
+#cover{
+
+    background:
+        radial-gradient(circle at top,
+        rgba(110,170,255,.12),
+        transparent 35%),
+
+        linear-gradient(
+        180deg,
+        #06111f 0%,
+        #0a2140 45%,
+        #0d3150 100%);
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================
+   ESTRELLAS
+========================================== */
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+
+    radial-gradient(2px 2px at 15% 20%, white 100%, transparent),
+
+    radial-gradient(2px 2px at 80% 18%, white 100%, transparent),
+
+    radial-gradient(2px 2px at 62% 60%, white 100%, transparent),
+
+    radial-gradient(2px 2px at 40% 72%, white 100%, transparent),
+
+    radial-gradient(3px 3px at 28% 40%, rgba(255,255,255,.9) 100%, transparent),
+
+    radial-gradient(2px 2px at 88% 75%, white 100%, transparent);
+
+    opacity:.9;
+
+}
+
+
+/* ==========================================
+   LUNA
+========================================== */
+
+.moon{
+
+    animation:
+        moonGlow 4s ease-in-out infinite;
+
+}
+
+
+@keyframes moonGlow{
+
+    0%{
+
+        box-shadow:
+        0 0 40px rgba(255,255,255,.45),
+        0 0 90px rgba(120,170,255,.25);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 55px rgba(255,255,255,.65),
+        0 0 120px rgba(170,210,255,.35);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 40px rgba(255,255,255,.45),
+        0 0 90px rgba(120,170,255,.25);
+
+    }
+
 }
