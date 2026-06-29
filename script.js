@@ -42,4 +42,20 @@ window.addEventListener("scroll", () => {
 
     nextMemory.style.display="none";
 
+});const photos = document.querySelectorAll(".photo");
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
 });
+
+photos.forEach(photo=>observer.observe(photo));
