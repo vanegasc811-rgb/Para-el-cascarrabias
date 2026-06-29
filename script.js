@@ -106,6 +106,11 @@ gift.addEventListener("click",()=>{
 playAudio.addEventListener("click",()=>{
 
     voice.play();
+    voice.onended = () => {
+
+    document.getElementById("signature").style.opacity = "1";
+
+};
 
 });const openGift = document.getElementById("openGift");
 const surprise = document.getElementById("surprise");
