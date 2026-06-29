@@ -5,7 +5,8 @@
 const envelope = document.querySelector(".envelope");
 const cover = document.getElementById("cover");
 const letter = document.getElementById("letter");
-
+const nextMemory = document.getElementById("nextMemory");
+const timeline = document.getElementById("timeline");
 let opened = false;
 
 envelope.addEventListener("click",()=>{
@@ -33,5 +34,11 @@ window.addEventListener("scroll", () => {
         memory.classList.add("show");
 
     }
+
+});nextMemory.addEventListener("click", ()=>{
+
+    timeline.classList.add("show");
+
+    nextMemory.style.display="none";
 
 });
