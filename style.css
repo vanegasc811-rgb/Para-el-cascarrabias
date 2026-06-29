@@ -487,3 +487,24 @@ button:hover{
     text-align:center;
 
 }
+#letter{
+
+    display:none;
+
+    min-height:100vh;
+
+    background:#08152d;
+
+    padding:80px 20px;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#letter.show{
+
+    display:flex;
+
+}
