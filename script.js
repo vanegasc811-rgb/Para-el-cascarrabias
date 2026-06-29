@@ -22,7 +22,7 @@ setTimeout(() => {
     cover.style.display = "none";
 
     letter.classList.add("show");
-
+music.play().catch(()=>{});
 }, 1400);
 });const memory = document.querySelector(".memory");
 
