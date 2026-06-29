@@ -22,4 +22,16 @@ setTimeout(() => {
     letter.classList.add("show");
 
 }, 1400);
+});const memory = document.querySelector(".memory");
+
+window.addEventListener("scroll", () => {
+
+    const top = memory.getBoundingClientRect().top;
+
+    if(top < window.innerHeight - 120){
+
+        memory.classList.add("show");
+
+    }
+
 });
