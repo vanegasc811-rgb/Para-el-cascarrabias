@@ -551,4 +551,113 @@ align-items:center;
 
     line-height:1.8;
 
+}/*==========================================
+    CARTA
+==========================================*/
+
+.letter-page{
+
+    font-family: Georgia, serif;
+
+}
+
+#letter-title{
+
+    color:#1f2d3d;
+
+    font-size:2.3rem;
+
+    margin-bottom:35px;
+
+}
+
+#letter-text{
+
+    color:#505050;
+
+    font-size:1.15rem;
+
+    line-height:2.1;
+
+    text-align:left;
+
+    white-space:pre-line;
+
+}.continue{
+
+    margin-top:45px;
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#7b8794;
+
+    animation:floatText 2.5s ease-in-out infinite;
+
+}
+
+@keyframes floatText{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}.memory{
+
+    margin-top:120px;
+
+    max-width:650px;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    text-align:left;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.memory.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.memory h2{
+
+    color:#1f2d3d;
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+
+}
+
+.memory p{
+
+    color:#555;
+
+    line-height:2;
+
 }
