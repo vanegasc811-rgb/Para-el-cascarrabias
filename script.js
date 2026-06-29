@@ -7,6 +7,7 @@ const cover = document.getElementById("cover");
 const letter = document.getElementById("letter");
 const nextMemory = document.getElementById("nextMemory");
 const timeline = document.getElementById("timeline");
+const music = document.getElementById("bgMusic");
 let opened = false;
 
 envelope.addEventListener("click",()=>{
