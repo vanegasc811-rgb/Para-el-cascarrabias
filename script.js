@@ -110,10 +110,68 @@ playAudio.addEventListener("click",()=>{
 });const openGift = document.getElementById("openGift");
 const surprise = document.getElementById("surprise");
 
-openGift.addEventListener("click", () => {
+const cinematic = document.getElementById("cinematicIntro");
+const cinematicText = document.getElementById("cinematicText");
 
-    surprise.scrollIntoView({
-        behavior: "smooth"
-    });
+gift.addEventListener("click",()=>{
+
+    gift.style.transform="scale(1.5)";
+    gift.style.opacity="0";
+
+    setTimeout(()=>{
+
+        gift.style.display="none";
+
+        document.querySelector(".gift-text").style.display="none";
+
+        document.querySelector(".final-title").style.display="none";
+
+        document.querySelector(".final-text").style.display="none";
+
+        finalContent.style.display="block";
+
+    },900);
 
 });
+
+    cinematic.style.display="flex";
+
+    cinematicText.innerHTML="Si has llegado hasta aquí...";
+
+    setTimeout(()=>{
+
+        cinematicText.style.opacity=1;
+
+    },300);
+
+    setTimeout(()=>{
+
+        cinematicText.style.opacity=0;
+
+    },2500);
+
+    setTimeout(()=>{
+
+        cinematicText.innerHTML="Es porque quería regalarte algo más que palabras.";
+
+        cinematicText.style.opacity=1;
+
+    },3500);
+
+    setTimeout(()=>{
+
+        cinematicText.style.opacity=0;
+
+    },6500);
+
+    setTimeout(()=>{
+
+        cinematic.style.display="none";
+
+        surprise.scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
+    },7600);

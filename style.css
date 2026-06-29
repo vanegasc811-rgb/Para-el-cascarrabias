@@ -989,4 +989,72 @@ transform:translateY(0);
 
     padding-top:120px;
 
+}#cinematicIntro{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+#cinematicText{
+
+    color:white;
+
+    font-size:2.5rem;
+
+    text-align:center;
+
+    max-width:700px;
+
+    opacity:0;
+
+    transition:1s;
+
+    line-height:1.6;
+
+}.gift-box{
+
+    animation:giftFloat 2.8s ease-in-out infinite;
+
+}
+
+@keyframes giftFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.gift-box:hover{
+
+    transform:scale(1.15) rotate(8deg);
+
+    filter:drop-shadow(0 0 25px gold);
+
 }
