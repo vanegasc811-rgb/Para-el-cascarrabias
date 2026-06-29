@@ -117,6 +117,7 @@ const surprise = document.getElementById("surprise");
 
 const cinematic = document.getElementById("cinematicIntro");
 const cinematicText = document.getElementById("cinematicText");
+cinematic.style.display = "none";
 
 gift.addEventListener("click",()=>{
 
