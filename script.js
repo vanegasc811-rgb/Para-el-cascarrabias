@@ -81,4 +81,30 @@ function updateCountdown(){
     `Faltan <strong>${days}</strong> días para celebrar contigo. 🌙`;
 }
 
-updateCountdown();
+updateCountdown();const gift = document.getElementById("gift");
+
+const finalContent = document.getElementById("finalContent");
+
+const playAudio = document.getElementById("playAudio");
+
+const voice = new Audio("musica/mensaje.mp3");
+
+gift.addEventListener("click",()=>{
+
+    gift.style.display="none";
+
+    document.querySelector(".gift-text").style.display="none";
+
+    document.querySelector(".final-title").style.display="none";
+
+    document.querySelector(".final-text").style.display="none";
+
+    finalContent.style.display="block";
+
+});
+
+playAudio.addEventListener("click",()=>{
+
+    voice.play();
+
+});
