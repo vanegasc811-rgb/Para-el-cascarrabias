@@ -802,4 +802,34 @@ align-items:center;
 
     transition:all .8s ease;
 
+}#countdown{
+
+    margin:120px auto;
+
+    text-align:center;
+
+}
+
+#countdown h2{
+
+    font-size:2.3rem;
+
+    margin-bottom:25px;
+
+}
+
+#countText{
+
+    font-size:1.4rem;
+
+    color:white;
+
+    background:rgba(255,255,255,.12);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
 }

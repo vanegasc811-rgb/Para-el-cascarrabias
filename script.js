@@ -58,4 +58,27 @@ const observer = new IntersectionObserver((entries)=>{
 
 });
 
-photos.forEach(photo=>observer.observe(photo));
+photos.forEach(photo=>observer.observe(photo));const birthday = new Date("2026-07-08T00:00:00");
+const countText = document.getElementById("countText");
+
+function updateCountdown(){
+
+    const now = new Date();
+
+    const diff = birthday - now;
+
+    if(diff <= 0){
+
+        countText.innerHTML =
+        "🎉 ¡Feliz cumpleaños, mi amor! Hoy por fin llegó el día que llevaba tanto tiempo esperando ❤️";
+
+        return;
+    }
+
+    const days = Math.floor(diff / (1000*60*60*24));
+
+    countText.innerHTML =
+    `Faltan <strong>${days}</strong> días para celebrar contigo. 🌙`;
+}
+
+updateCountdown();
