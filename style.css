@@ -319,7 +319,7 @@ button:hover{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    transform: translaterY (25px);
+    transform: translateY (25px);
     transition:transform 1.6s ease;
 
     z-index:0;
@@ -512,5 +512,43 @@ button:hover{
 #letter.show{
 
     display:flex !important;
+
+}.letter-page{
+
+    width:100%;
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:50px 40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    text-align:center;display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+}#letter-title{
+
+    color:#08152d;
+
+    font-size:2.8rem;
+
+    margin-bottom:25px;
+
+}
+
+#letter-text{
+
+    color:#4d5563;
+
+    font-size:1.3rem;
+
+    line-height:1.8;
 
 }
