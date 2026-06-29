@@ -1,26 +1,17 @@
-/* ==========================================
-   PROYECTO LUNA
-   JavaScript principal
-========================================== */
+/*==========================================
+    PROYECTO LUNA
+==========================================*/
 
-// Elementos
 const envelope = document.querySelector(".envelope");
-const flap = document.querySelector(".envelope-flap");
-const seal = document.querySelector(".seal");
 
-// Estados
 let opened = false;
 
-// Eventos
-envelope.addEventListener("click", openEnvelope);
+envelope.addEventListener("click",()=>{
 
-// Función principal
-function openEnvelope() {
+    if(opened) return;
 
-    if (opened) return;
+    opened=true;
 
-    opened = true;
+    envelope.classList.add("open");
 
-    console.log("Proyecto Luna comenzó ❤️");
-
-}
+});
