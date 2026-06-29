@@ -134,10 +134,9 @@ body{
 ========================================== */
 
 .moon{
-
-    width:170px;
-
-    height:170px;
+width:145px;
+height:145px;
+   
 
     border-radius:50%;
 
@@ -362,7 +361,20 @@ button:hover{
 
 }
 
-.seal{
+width:48px;
+height:48px;
+
+background:linear-gradient(
+180deg,
+#6cb8ff,
+#3f8ef5);
+
+font-size:22px;
+
+border:2px solid rgba(255,255,255,.55);
+
+box-shadow:
+0 0 22px rgba(90,170,255,.55);
 
     position:absolute;
 
@@ -391,15 +403,16 @@ button:hover{
         0 0 18px rgba(94,168,255,.55);
 
 }
-
 .touch-text{
 
-    margin-top:22px;
+    margin-top:24px;
 
-    color:white;
+    font-size:1rem;
 
-    opacity:.8;
+    font-style:italic;
 
-    font-size:.95rem;
+    letter-spacing:.4px;
+
+    opacity:.82;
 
 }
