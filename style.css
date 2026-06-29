@@ -487,9 +487,16 @@ button:hover{
     text-align:center;
 
 }
+
 #letter{
 
     display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
 
     min-height:100vh;
 
@@ -502,9 +509,8 @@ button:hover{
     align-items:center;
 
 }
-
 #letter.show{
 
-    display:flex;
+    display:flex !important;
 
 }
