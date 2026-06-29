@@ -492,10 +492,6 @@ button:hover{
 
     display:none;
 
-    position:fixed;
-
-    inset:0;
-
     z-index:9999;
 
     min-height:100vh;
@@ -504,14 +500,11 @@ button:hover{
 
     padding:80px 20px;
 
-    justify-content:center;
-
-    align-items:center;
 
 }
 #letter.show{
 
-    display:flex !important;
+    display:block !important;
 
 }.letter-page{
 
