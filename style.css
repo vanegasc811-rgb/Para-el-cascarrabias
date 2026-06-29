@@ -930,4 +930,48 @@ transform:translateY(0);
 
 }
 
+}#lastLetter{
+
+    margin:140px auto;
+
+    text-align:center;
+
+    max-width:700px;
+
+}
+
+#lastLetter h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:30px;
+
+}
+
+#lastLetter p{
+
+    line-height:2;
+
+    font-size:1.2rem;
+
+    margin-bottom:40px;
+
+}
+
+#openGift{
+
+    background:linear-gradient(180deg,#6cb8ff,#3f8ef5);
+
+    color:white;
+
+    padding:20px 42px;
+
+    border-radius:50px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:1.1rem;
+
 }
