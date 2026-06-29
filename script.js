@@ -87,7 +87,7 @@ const finalContent = document.getElementById("finalContent");
 
 const playAudio = document.getElementById("playAudio");
 
-const voice = new Audio("musica/mensaje.mp3.m4a");
+const voice = new Audio("musica/Mensaje.mp3.m4a");
 
 gift.addEventListener("click",()=>{
 
