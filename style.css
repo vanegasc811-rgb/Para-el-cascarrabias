@@ -274,17 +274,17 @@ button:hover{
 
     }
 
-}/* ==========================================
+}
+
+/* ==================================================
    SOBRE
-========================================== */
+================================================== */
 
 .envelope-container{
-
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-top:45px;
-
+    margin-top:50px;
 }
 
 .envelope{
@@ -296,7 +296,7 @@ button:hover{
 
     cursor:pointer;
 
-    transition:.35s;
+    transition:transform .35s ease;
 
 }
 
@@ -306,14 +306,48 @@ button:hover{
 
 }
 
-.envelope-back{
+.envelope-letter{
 
     position:absolute;
+
+    left:10%;
+    top:18px;
+
+    width:80%;
+    height:120px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    transition:transform 1.6s ease;
+
+    z-index:0;
+
+}
+
+.paper{
 
     width:100%;
     height:100%;
 
-    border-radius:10px;
+    background:white;
+
+    border-radius:8px;
+
+    padding:18px;
+
+    color:#444;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+
+}
+
+.envelope-back{
+
+    position:absolute;
+
+    inset:0;
 
     background:linear-gradient(
         180deg,
@@ -321,32 +355,24 @@ button:hover{
         #f7eed9 100%
     );
 
+    border-radius:10px;
+
     border:1px solid rgba(170,150,120,.25);
 
     box-shadow:
         0 15px 35px rgba(0,0,0,.28),
         inset 0 2px 8px rgba(255,255,255,.6);
 
-}
-
-    position:absolute;
-
-    width:100%;
-    height:100%;
-
-    background:#f5ecd8;
-
-    border-radius:8px;
-
-    box-shadow:
-
-        0 12px 35px rgba(0,0,0,.28);
+    z-index:2;
 
 }
 
 .envelope-flap{
 
     position:absolute;
+
+    top:0;
+    left:0;
 
     width:100%;
     height:80px;
@@ -355,26 +381,15 @@ button:hover{
 
     clip-path:polygon(0 0,100% 0,50% 100%);
 
-    transform-origin:top;
+    transform-origin:top center;
 
-    transition:.8s;
+    transition:transform .8s ease;
+
+    z-index:4;
 
 }
 
-width:48px;
-height:48px;
-
-background:linear-gradient(
-180deg,
-#6cb8ff,
-#3f8ef5);
-
-font-size:22px;
-
-border:2px solid rgba(255,255,255,.55);
-
-box-shadow:
-0 0 22px rgba(90,170,255,.55);
+.seal{
 
     position:absolute;
 
@@ -383,12 +398,18 @@ box-shadow:
 
     transform:translateX(-50%);
 
-    width:44px;
-    height:44px;
+    width:48px;
+    height:48px;
 
     border-radius:50%;
 
-    background:#5ea8ff;
+    background:linear-gradient(
+        180deg,
+        #6cb8ff,
+        #3f8ef5
+    );
+
+    border:2px solid rgba(255,255,255,.55);
 
     display:flex;
     justify-content:center;
@@ -396,16 +417,21 @@ box-shadow:
 
     color:white;
 
-    font-size:20px;
+    font-size:22px;
 
-    box-shadow:
+    box-shadow:0 0 22px rgba(90,170,255,.55);
 
-        0 0 18px rgba(94,168,255,.55);
+    z-index:5;
+
+    transition:opacity .4s ease;
 
 }
+
 .touch-text{
 
     margin-top:24px;
+
+    color:white;
 
     font-size:1rem;
 
